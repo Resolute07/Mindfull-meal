@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
           _duration--;
         });
 
-        if (_duration < 6) {
+        if (_duration < 5) {
           playBeep();
         }
       } else {

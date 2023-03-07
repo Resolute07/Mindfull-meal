@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   bool isStared = false;
   bool sound = true;
   double pagePos = 0;
-  int _duration = 7;
+  int _duration = 30;
 
   Future<void> playBeep() async {
     sound
@@ -124,7 +124,7 @@ class _HomePageState extends State<HomePage> {
                       controller: _controller,
                       width: width / 1.69,
                       height: height / 3.67,
-                      duration: 7,
+                      duration: 30,
                       fillColor: Color(0xff26CD66),
                       backgroundColor: Colors.white,
                       ringColor: Colors.white,
@@ -169,7 +169,7 @@ class _HomePageState extends State<HomePage> {
                     _controller.start();
                     setState(() {
                       isStared = true;
-                      _duration = 7;
+                      _duration = 30;
                     });
                   },
                   child: CustomButton(
